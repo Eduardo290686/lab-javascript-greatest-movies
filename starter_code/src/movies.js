@@ -30,7 +30,19 @@ function orderAlphabetically(arr) {
   return sortedArrTitles;
 }
 // Iteration 4: All rates average - Get the average of all rates with 2 decimals
-
+function ratesAverage(arr){
+  if(arr.length===0){
+    return 0;
+  }
+  let rates = arr.map(movie => {
+    if(movie.rate===""||movie.rate===undefined){
+      return 0;
+    }
+    return movie.rate
+  })
+  console.log(rates);
+  return parseFloat((rates.reduce((acc, element) => acc + element) / arr.length).toFixed(2));
+}
 // Iteration 5: Drama movies - Get the average of Drama Movies
 
 // Iteration 6: Time Format - Turn duration of the movies from hours to minutes
