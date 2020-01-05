@@ -7,7 +7,7 @@ let movies = [
       "genre": [
         "Crime",
         "Drama"
-      ],
+      ],  
       "rate": 9.3
     },
     {
